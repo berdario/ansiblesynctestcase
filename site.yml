@@ -1,0 +1,5 @@
+
+- hosts: all
+  tasks:
+    - name: push files
+      synchronize: src="./*" dest=/tmp/ recursive=yes archive=yes delete=yes
